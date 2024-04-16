@@ -1,0 +1,29 @@
+{
+  "name": "habr_12.04.2024",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "json-server": "json-server db.json",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "chart.js": "^4.4.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.28",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/tsconfig": "^0.5.1",
+    "json-server": "^1.0.0-alpha.23",
+    "npm-run-all2": "^6.1.2",
+    "typescript": "~5.4.0",
+    "vite": "^5.1.6",
+    "vue-tsc": "^2.0.6"
+  }
+}
