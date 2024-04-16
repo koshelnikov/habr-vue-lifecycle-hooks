@@ -1,2 +1,5 @@
-# Title
-TODO: write readme
+# install
+npm install
+
+# run
+npm run dev
