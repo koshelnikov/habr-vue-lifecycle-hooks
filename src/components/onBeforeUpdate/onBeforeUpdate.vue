@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import {onBeforeMount, onBeforeUpdate, onMounted, ref} from "vue";
+import {onBeforeMount, onBeforeUpdate, ref, shallowRef} from "vue";
 const isLoading = ref(true);
-const users = ref<{id: number, name: string}[]>([]);
+const users = shallowRef<{id: number, name: string}[]>([]);
 const liElements = ref<(HTMLLIElement | undefined) []>([])
 
 // регистрируем загрузку данных до отображения компонента

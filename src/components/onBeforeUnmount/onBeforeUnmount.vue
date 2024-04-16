@@ -6,6 +6,7 @@ let intervalId;
 
 onMounted(() => {
   intervalId = setInterval(() => {
+    console.log('interval')
 
   },1000)
 })
